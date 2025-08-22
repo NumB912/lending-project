@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFFFFF;
+  --color-secondary: #000000;
+  --color-content: #FFFFFF;
+  --spacing-128: 32rem;
+
+  --font-sans: Inter, sans-serif;
+}
+
+@layer utilities{
+
+}
+
+@layer components {
+  .content {
+    @apply w-7xl max-w-full;
+  }
+}
