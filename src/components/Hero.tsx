@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Button from "./UI/button";
 import hero from "./../assets/hero-bg.png";
 import gsap from "gsap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 const Hero = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -77,10 +76,6 @@ const Hero = () => {
           className="hero-image object-cover max-w-sm"
           alt="Hero-image"
         />
-      </div>
-
-      <div className="overlay absolute left-100 top-500 -z-10 bg-black w-fit text-white opacity-50">
-        d
       </div>
     </div>
   );

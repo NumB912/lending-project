@@ -1,10 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import {
+  faClock,
+  faFlag,
+  faMoneyCheckDollar,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { faAdd } from "@fortawesome/free-solid-svg-icons/faAdd";
 
 const About = () => {
   return (
-    <div className="w-full h-screen flex items-start justify-center ">
+    <div id="about" className="w-full h-screen flex flex-col items-center justify-center ">
       <div className="py-10 content flex flex-col gap-20">
         <div className="about flex gap-10">
           <div className="info-about w-full">
@@ -18,25 +23,71 @@ const About = () => {
               harum sunt aperiam distinctio quae, laborum voluptatibus quo eius.
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
               ut illo quidem numquam hic tempore minima, corporis possimus aut
-              repellat error accusantium eos quisquam esse cupiditate, fugiat
+              repellat error accusantium eos quisquam esse cupiditate, fugiats
               iste, quos exercitationem.
             </p>
           </div>
 
           <div className="img-about w-full">
-            <img src="/path/to/image.jpg" alt="About us" />
+            <img
+              src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2022/11/may-chu-la-gi-0.jpg"
+              alt="About us"
+            />
           </div>
         </div>
 
         <div className="experience flex gap-10">
           <div className="content-experience grid-cols-2 grid w-full gap-3">
+            <div className="card-experience p-5 w-full bg-secondary rounded-lg gap-4 max-w-md h-fit">
+              <FontAwesomeIcon
+                icon={faClock}
+                className="text-lg p-2 bg-white rounded self-start"
+              />
+              <p className="quantity-experience  text-5xl text-white text-center">
+                6+
+              </p>
+              <p className="time-experience text-sm text-white text-center">
+                Years of experience
+              </p>
+            </div>
 
-            <div className="card-experience p-5 w-full bg-secondary rounded-lg flex-col flex items-center justify-center gap-4 max-w-md">
-                <div className="flex justify-center gap-5">
-                    <FontAwesomeIcon icon={faClock} className="text-lg p-2 bg-white rounded"/>
-                <p className="quantity-experience font-bold text-5xl text-white">6+</p>
-                </div>
-                <p className="time-experience text-2xl text-white aspect-square">Years of experience</p>
+            <div className="card-experience p-5 w-full bg-secondary rounded-lg gap-4 max-w-md h-fit">
+              <FontAwesomeIcon
+                icon={faAdd}
+                className="text-lg p-2 bg-white rounded self-start"
+              />
+              <p className="quantity-experience  text-5xl text-white text-center">
+                60+
+              </p>
+              <p className="time-experience text-sm text-white text-center">
+                Businesses transformed
+              </p>
+            </div>
+
+            <div className="card-experience p-5 w-full bg-secondary rounded-lg gap-4 max-w-md h-fit">
+              <FontAwesomeIcon
+                icon={faMoneyCheckDollar}
+                className="text-lg p-2 bg-white rounded self-start"
+              />
+              <p className="quantity-experience text-5xl text-white text-center">
+                10M
+              </p>
+              <p className="time-experience text-sm text-white text-center">
+                VNDs generated
+              </p>
+            </div>
+
+            <div className="card-experience p-5 w-full bg-secondary rounded-lg gap-4 max-w-md h-fit">
+              <FontAwesomeIcon
+                icon={faFlag}
+                className="text-lg p-2 bg-white rounded self-start"
+              />
+              <p className="quantity-experience  text-5xl text-white text-center">
+                5+
+              </p>
+              <p className="time-experience text-sm text-white text-center">
+                Projects complete
+              </p>
             </div>
           </div>
 

@@ -18,3 +18,7 @@
     @apply w-7xl max-w-full;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
